@@ -27,6 +27,7 @@ def home():
     return render_template('home.html')
 
 
+
 # when the post method detect, then redirect to success function
 @app.route('/', methods=['POST', 'GET'])
 def get_data():
