@@ -29,6 +29,7 @@ def home():
 
 
 
+
 # when the post method detect, then redirect to success function
 @app.route('/', methods=['POST', 'GET'])
 def get_data():
