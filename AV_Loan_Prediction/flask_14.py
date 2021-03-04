@@ -7,9 +7,6 @@ Created on Wed Feb 24 00:11:21 2021
 
 
 
-
-
-
 # importing the required libraries
 from flask import Flask, render_template, request, redirect, url_for
 from joblib import load
