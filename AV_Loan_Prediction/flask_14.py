@@ -52,5 +52,6 @@ def success(name):
     return "<xmp>" + str(requestResults(Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term,Credit_History,Property_Area)) + " </xmp> """
 
 
+
 if __name__=="__main__":
     app.run()
