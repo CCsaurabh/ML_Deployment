@@ -5,12 +5,9 @@ Created on Wed Feb 24 00:11:21 2021
 @author: SaurabhM
 """
 
-
-
 # importing the required libraries
 from flask import Flask, render_template, request, redirect, url_for
 from joblib import load
-
 import pandas as pd
 # load the pipeline object
 pipeline = load("loan_predict.joblib")
