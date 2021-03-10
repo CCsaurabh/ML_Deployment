@@ -11,7 +11,6 @@ from joblib import load
 import pandas as pd
 # load the pipeline object
 pipeline = load("loan_predict.joblib")
-
 # start flask
 app = Flask(__name__)
 
