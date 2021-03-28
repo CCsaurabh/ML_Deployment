@@ -12,12 +12,10 @@ import pandas as pd
 pipeline = load("loan_predict.joblib")
 # start flask
 app = Flask(__name__)
-
 # render default webpage
 @app.route('/')
 def home():
     return render_template('home.html')
-
 # when the post method detect, then redirect to success function
 @app.route('/', methods=['POST', 'GET'])
 def get_data():
@@ -36,7 +34,6 @@ def get_data():
     data={'gender':Gender,'Married':[Married],'Dependents':[Dependents],'Education':[Education],'Self_Employed':[Self_Employed],'ApplicantIncome':[ApplicantIncome],'CoapplicantIncome':[CoapplicantIncome],'LoanAmount':[LoanAmount],'Loan_Amount_Term':[Loan_Amount_Term],'Credit_History':[Credit_History],'Property_Area':[Property_Area]} 
     
     df = pd.DataFrame(data) 
-    
     
     value=pipeline.predict(df)
 
